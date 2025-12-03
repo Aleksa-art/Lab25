@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 25 Task 3</title>
+  <style>
+    #galleryPhoto {
+      width: 320px; 
+      height: auto;
+      border: 2px solid #555;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <img id="galleryPhoto" src="image1.jpg" alt="Фото">
+  <script>
+    const photo = document.getElementById('galleryPhoto');
+    photo.addEventListener('mouseover', function() {
+      photo.src = 'image2.jpg';
+    });
+    photo.addEventListener('mouseout', function() {
+      photo.src = 'image1.jpg';
+    });
+  </script>
+</body>
+</html>
