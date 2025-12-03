@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 25 Task 4</title>
+</head>
+<body>
+  <input type="text" id="testField" placeholder="Натисніть будь-яку клавішу" style="width: 220px; padding: 5px;">
+  <script>
+    document.getElementById('testField').addEventListener('keydown', function(evt) {
+      console.log('Натиснута кнопка (код):', evt.code);
+    });
+  </script>
+</body>
+</html>
